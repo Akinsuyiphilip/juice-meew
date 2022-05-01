@@ -1,0 +1,788 @@
+:root {
+  --LightredCTAtext: hsl(356, 100%, 66%);
+  --VerylightredCTAhoverbackground: hsl(355, 100%, 74%);
+  --Verydarkblueheadings: hsl(208, 49%, 24%);
+  --Whitetext: hsl(0, 0%, 100%);
+  --Grayishbluefootertext: hsl(240, 2%, 79%);
+  --Verydarkgrayishbluebodycopy: hsl(207, 13%, 34%);
+  --Verydarkblackbluefooterbackground: hsl(240, 10%, 16%);
+  --Verylightred: hsl(13, 100%, 72%);
+  --Lightred: hsl(353, 100%, 62%);
+  --Verydarkgrayblue: hsl(237, 17%, 21%);
+  --Verydarkdesaturatedblue: hsl(237, 23%, 32%);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.first-sec {
+  margin: 0;
+  padding: 0;
+  background: url(./images/bg-pattern-intro-desktop.svg) no-repeat, -webkit-gradient(linear, left top, right top, from(rgba(255, 143, 112, 0.884)), to(#ff3d54));
+  background: url(./images/bg-pattern-intro-desktop.svg) no-repeat, linear-gradient(to right, rgba(255, 143, 112, 0.884), #ff3d54);
+  background-size: 190rem;
+  background-position: center;
+  border-bottom-left-radius: 10rem;
+  height: 90vh;
+}
+
+.first-sec .toplanding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3rem;
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+}
+
+.first-sec .toplanding .mobile {
+  display: none;
+}
+
+.first-sec .toplanding .fit1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: var(--Whitetext);
+}
+
+.first-sec .toplanding .fit1 .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 3rem;
+}
+
+.first-sec .toplanding .fit1 .links .oprt {
+  padding: 0 .3rem;
+}
+
+.first-sec .toplanding .fit1 .links .oprt button {
+  text-decoration: none;
+  color: var(--Grayishbluefootertext);
+  font-family: 'Ubuntu', sans-serif;
+  border: none;
+  background: none;
+}
+
+.first-sec .toplanding .fit1 .links .oprt .dropdowns {
+  display: none;
+  position: absolute;
+  background-color: rgba(37, 37, 45, 0.534);
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.first-sec .toplanding .fit1 .links .oprt .dropdowns a {
+  color: var(--Whitetext);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.first-sec .toplanding .fit1 .links .oprt .dropdowns a:hover {
+  background: var(--Verydarkgrayblue);
+}
+
+.first-sec .toplanding .fit1 .links .oprt:hover button {
+  color: var(--Whitetext);
+}
+
+.first-sec .toplanding .fit1 .links .oprt:hover .dropdowns {
+  display: block;
+}
+
+.first-sec .toplanding .end-btn a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--Grayishbluefootertext);
+  font-family: 'Ubuntu', sans-serif;
+  padding-right: 1.3rem;
+}
+
+.first-sec .toplanding .end-btn a:hover {
+  color: var(--Whitetext);
+}
+
+.first-sec .toplanding .end-btn .signup {
+  padding: .6rem 1.6rem;
+  background: var(--Whitetext);
+  color: var(--Lightred);
+  border-radius: 2rem;
+}
+
+.first-sec .toplanding .end-btn .signup:hover {
+  background: var(--Lightred);
+}
+
+.first-sec .afnav {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+
+.first-sec .afnav .textua h2 {
+  color: var(--Whitetext);
+  font-size: 3.7rem;
+  font-family: 'Overpass', sans-serif;
+}
+
+.first-sec .afnav .textua p {
+  color: var(--Grayishbluefootertext);
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.first-sec .afnav .undertextbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.first-sec .afnav .undertextbtn .textbtn1 {
+  text-decoration: none;
+  padding: .5rem 1rem;
+}
+
+.first-sec .afnav .undertextbtn .whitebtn {
+  background-color: var(--Whitetext);
+  margin-right: 2rem;
+  color: var(--Lightred);
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 1rem;
+}
+
+.first-sec .afnav .undertextbtn .whitebtn:hover {
+  background-color: var(--VerylightredCTAhoverbackground);
+  color: var(--Whitetext);
+}
+
+.first-sec .afnav .undertextbtn .outbtn {
+  border: 0.1rem solid var(--Whitetext);
+  font-family: 'Ubuntu', sans-serif;
+  border-radius: 1rem;
+  color: var(--Whitetext);
+}
+
+.first-sec .afnav .undertextbtn .outbtn:hover {
+  color: var(--Lightred);
+  background-color: var(--Whitetext);
+}
+
+.secondlay {
+  margin: 6rem 0 0 10rem;
+}
+
+.secondlay .headertext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--Verydarkblueheadings);
+}
+
+.secondlay .flip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3rem;
+  margin: 0;
+}
+
+.secondlay .flip .intro {
+  line-height: 1.6;
+}
+
+.secondlay .flip .intro h2 {
+  font-family: 'Ubuntu', sans-serif;
+  color: var(--Verydarkblueheadings);
+}
+
+.secondlay .flip .intro p {
+  font-size: 1.2rem;
+  padding-right: 12rem;
+  word-break: break-all;
+  color: var(--Verydarkdesaturatedblue);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.secondlay .flip .pic img {
+  height: 25rem;
+}
+
+.thirdlay {
+  height: 21rem;
+  border-bottom-left-radius: 8rem;
+  border-top-right-radius: 8rem;
+  background: url(./images/bg-pattern-circles.svg) no-repeat, var(--Verydarkgrayblue) no-repeat;
+  background-position: -30% 90%;
+  background-size: 50rem;
+  margin: 3rem 0;
+}
+
+.thirdlay .phone {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 6rem 0 0 10rem;
+}
+
+.thirdlay .phone .imasey img {
+  height: 30rem;
+  position: absolute;
+  z-index: 1;
+  top: -4rem;
+}
+
+.thirdlay .phone .wtexts {
+  margin: 2rem 9rem 0 30rem;
+}
+
+.thirdlay .phone .wtexts h2 {
+  font-size: 2rem;
+  color: var(--Whitetext);
+  font-family: 'Overpass', sans-serif;
+}
+
+.thirdlay .phone .wtexts p {
+  padding-right: 8rem;
+  color: var(--Grayishbluefootertext);
+  font-family: 'Overpass', sans-serif;
+}
+
+.fourthlay .rety {
+  margin: 8rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fourthlay .rety .imgfd img {
+  height: 30rem;
+}
+
+.fourthlay .rety .write {
+  padding-left: 4rem;
+}
+
+.fourthlay .rety .write h2 {
+  font-family: 'Overpass', sans-serif;
+  color: var(--Verydarkdesaturatedblue);
+}
+
+.fourthlay .rety .write p {
+  font-family: 'ubuntu';
+  color: var(--Verydarkgrayblue);
+  padding: 0 15rem 2rem 0;
+}
+
+footer {
+  padding: 2rem;
+  background: var(--Verydarkblackbluefooterbackground);
+}
+
+footer .alft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+}
+
+footer .alft .f1 img {
+  padding-top: 2rem;
+}
+
+footer .alft .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .alft .list h2 {
+  text-align: left;
+  color: var(--Whitetext) !important;
+  font-size: 1rem;
+  font-family: 'overpass';
+  padding: 0 0 1rem;
+}
+
+footer .alft .list a {
+  text-align: left;
+  text-decoration: none;
+  padding-bottom: .6rem;
+  color: var(--Grayishbluefootertext);
+  font-family: 'ubuntu';
+}
+
+footer .alft .list a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 400px) {
+  .first-sec {
+    margin: 0;
+    padding: 0;
+    background: url(./images/bg-pattern-intro-desktop.svg) no-repeat, -webkit-gradient(linear, left top, right top, from(rgba(255, 143, 112, 0.884)), to(#ff3d54));
+    background: url(./images/bg-pattern-intro-desktop.svg) no-repeat, linear-gradient(to right, rgba(255, 143, 112, 0.884), #ff3d54);
+    background-size: 190rem;
+    background-position: center;
+    border-bottom-left-radius: 7rem;
+    max-height: 90vh;
+  }
+  .first-sec .toplanding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+  }
+  .first-sec .toplanding .fit1 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: var(--Whitetext);
+  }
+  .first-sec .toplanding .fit1 .nav img {
+    padding-left: 1rem;
+  }
+  .first-sec .toplanding .fit1 .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+  }
+  .first-sec .toplanding .fit1 .links {
+    display: none;
+    position: relative;
+    padding-right: 4rem;
+    background: none;
+    border: 0.2rem solid var(--Grayishbluefootertext);
+    margin: 1rem;
+    padding: .5rem 3rem 1rem;
+  }
+  .first-sec .toplanding .fit1 .links .oprt button {
+    text-decoration: none;
+    color: var(--Grayishbluefootertext);
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    background: none;
+    padding-bottom: 2rem;
+  }
+  .first-sec .toplanding .fit1 .links .oprt .dropdowns {
+    display: none;
+    position: absolute;
+    background-color: rgba(37, 37, 45, 0.534);
+    min-width: 160px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .first-sec .toplanding .fit1 .links .oprt .dropdowns a {
+    color: var(--Whitetext);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .first-sec .toplanding .fit1 .links .oprt .dropdowns a:hover {
+    background: var(--Verydarkgrayblue);
+  }
+  .first-sec .toplanding .fit1 .links .oprt:hover button {
+    color: var(--Whitetext);
+  }
+  .first-sec .toplanding .fit1 .links .oprt:hover .dropdowns {
+    display: block;
+  }
+  .first-sec .toplanding .end-btn {
+    display: none;
+  }
+  .first-sec .toplanding .end-btn a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--Grayishbluefootertext);
+    font-family: 'Ubuntu', sans-serif;
+    padding-right: 1.3rem;
+  }
+  .first-sec .toplanding .end-btn a:hover {
+    color: var(--Whitetext);
+  }
+  .first-sec .toplanding .end-btn .signup {
+    padding: .6rem 1.6rem;
+    background: var(--Whitetext);
+    color: var(--Lightred);
+    border-radius: 2rem;
+  }
+  .first-sec .toplanding .end-btn .signup:hover {
+    background: var(--Lightred);
+  }
+  .first-sec .open {
+    display: block;
+    position: absolute;
+    right: -15rem;
+    top: -.5rem;
+  }
+  .first-sec .hide {
+    display: none;
+  }
+  .first-sec .afnav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10rem;
+  }
+  .first-sec .afnav .textua h2 {
+    color: var(--Whitetext);
+    font-size: 2.5rem;
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 0;
+  }
+  .first-sec .afnav .textua p {
+    color: var(--Grayishbluefootertext);
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1.5rem 4rem;
+    margin-top: 0;
+  }
+  .first-sec .afnav .undertextbtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .first-sec .afnav .undertextbtn .textbtn1 {
+    text-decoration: none;
+    padding: .5rem 1rem;
+  }
+  .first-sec .afnav .undertextbtn .whitebtn {
+    background-color: var(--Whitetext);
+    margin-right: 2rem;
+    color: var(--Lightred);
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 1rem;
+  }
+  .first-sec .afnav .undertextbtn .whitebtn:hover {
+    background-color: var(--VerylightredCTAhoverbackground);
+    color: var(--Whitetext);
+  }
+  .first-sec .afnav .undertextbtn .outbtn {
+    border: 0.1rem solid var(--Whitetext);
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 1rem;
+    color: var(--Whitetext);
+  }
+  .first-sec .afnav .undertextbtn .outbtn:hover {
+    color: var(--Lightred);
+    background-color: var(--Whitetext);
+  }
+  .secondlay {
+    margin: 3rem 0 10rem !important;
+  }
+  .secondlay .headertext {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: var(--Verydarkblueheadings);
+  }
+  .secondlay .flip {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 4rem;
+    margin: 0;
+  }
+  .secondlay .flip .intro h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding: 0 3rem;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--Verydarkblueheadings);
+  }
+  .secondlay .flip .intro p {
+    font-size: 1.2rem;
+    color: var(--Verydarkdesaturatedblue);
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0 2.3rem;
+    text-align: center;
+  }
+  .secondlay .flip .pic {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .secondlay .flip .pic img {
+    height: 20rem;
+  }
+  .thirdlay {
+    height: 34rem;
+    border-bottom-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    background: url(./images/bg-pattern-circles.svg) no-repeat, var(--Verydarkgrayblue) no-repeat;
+    background-position: 30% -200%;
+    background-size: 30rem;
+    margin: 6rem 0 !important;
+    padding: 0 !important;
+  }
+  .thirdlay .phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .thirdlay .phone .imasey img {
+    height: 20rem;
+    position: absolute;
+    z-index: .5;
+    top: -9rem;
+    left: -8rem;
+  }
+  .thirdlay .phone .wtexts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 0 0 0 -9rem !important;
+    padding: 10rem 0 0 !important;
+  }
+  .thirdlay .phone .wtexts h2 {
+    font-size: 2rem;
+    color: var(--Whitetext);
+    font-family: 'Overpass', sans-serif;
+  }
+  .thirdlay .phone .wtexts p {
+    color: var(--Grayishbluefootertext);
+    font-family: 'Overpass', sans-serif;
+    padding: 0 4rem !important;
+    text-align: center;
+    line-height: 1.6;
+  }
+  .fourthlay .rety {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .fourthlay .rety .imgfd img {
+    height: 18rem;
+  }
+  .fourthlay .rety .write {
+    padding: 0;
+  }
+  .fourthlay .rety .write h2 {
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    color: var(--Verydarkdesaturatedblue);
+  }
+  .fourthlay .rety .write p {
+    font-family: 'ubuntu';
+    color: var(--Verydarkgrayblue);
+    padding: 0 3rem 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  footer {
+    padding: 2rem;
+    background: var(--Verydarkblackbluefooterbackground);
+  }
+  footer .alft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  footer .alft .f1 img {
+    padding-top: 2rem;
+  }
+  footer .alft .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .alft .list h2 {
+    text-align: left;
+    color: var(--Whitetext) !important;
+    font-size: 1rem;
+    font-family: 'overpass';
+    padding: 0 0 1rem;
+  }
+  footer .alft .list a {
+    text-align: left;
+    text-decoration: none;
+    padding-bottom: .6rem;
+    color: var(--Grayishbluefootertext);
+    font-family: 'ubuntu';
+  }
+  footer .alft .list a:hover {
+    text-decoration: underline;
+  }
+}
+/*# sourceMappingURL=style.css.map */
